@@ -1,0 +1,57 @@
+// Styling for the masthead
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  //background: linear-gradient(to bottom, #{fade-out($brown, .5)} 0%,#{fade-out($brown, .5)} 100%), url('../img/bg-masthead.jpg');
+  background: linear-gradient(to bottom, #{fade-out($brown, .55)} 75%,#{fade-out($brown, 0)} 100%), url('../img/bg-masthead.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-size: 2.35rem;
+  }
+  height: 100vh;
+  
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 3.1rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+// About page background
+#about{
+  background: linear-gradient(to top, #{fade-out($brown, .09)} 0%,#{fade-out($brown, 0)} 100%), url('../img/about/bg-about.jpg');
+  
+}
+
+// Projects page background
+#projects{
+  background: linear-gradient(to top, #{fade-out($white, 0)} 0%,#{fade-out($white, 0.5)} 100%), url('../img/projects/bg-projects.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+// Music page background
+#music{
+  background: linear-gradient(to top, #{fade-out($brown, 0)} 0%,#{fade-out($brown, 0.15)} 100%), url('../img/music/bg-music.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
